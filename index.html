@@ -8,8 +8,12 @@
                 return Math.floor(Math.random() * max);
             }
 
-            var randomNumber = getRandomInt(2);
-            console.log({randomNumber});
+            var number = getRandomInt(2);
+            console.log({number});
+            (function(){
+                console.log('即時関数... Immediately Invoked Function Expression')
+                return number;
+            })()
         </script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132461298-4"></script>
